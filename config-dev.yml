@@ -1,24 +1,2 @@
-
-server:
-  port: 3344
-
-spring:
-  application:
-    name: cloud-config-center
-  cloud:
-    config:
-      server:
-        git:
-          uri: git@github.com:xuguopeng123/springcloud-config.git
-          username: 564480827@qq.com
-          password: 1998XGP08160412.
-          search-paths:
-            - springcloud-config
-      ####读取分支
-      label: main
-
-eureka:
-  client:
-    service-url:
-      defaultZone: http://localhost:7001/eureka
-
+config:
+  info: "master branch,springcloud-config/config-dev.yml version=1"
